@@ -105,6 +105,19 @@ public class YHello {
 		}
 		return 0;
 	}
+	
+	public int h() {
+		int i = 0;
+		try {
+			i = 1;
+		} catch (Exception e) {
+			i = 2;
+			throw new RuntimeException(e);
+		} catch (OutOfMemoryError e) {
+			i = 3;
+		}
+		return 0;
+	}
 
 		
 }
